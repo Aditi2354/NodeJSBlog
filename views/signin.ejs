@@ -1,0 +1,52 @@
+<div class="container mt-5 d-flex justify-content-center">
+  <div class="col-md-6 col-lg-5">
+    <div class="card p-4 shadow border-0">
+      <h2 class="text-center mb-4">Sign In 🔐</h2>
+
+      <form action="/user/signin" method="POST">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="xyz@example.com"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            placeholder="Your password"
+            required
+          />
+        </div>
+
+        <div class="form-check mb-3">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="rememberMe"
+            name="rememberMe"
+          />
+          <label class="form-check-label" for="rememberMe">
+            Remember me
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+
+        <p class="text-center mt-3">
+          Don’t have an account?
+          <a href="/user/signup">Create one</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
