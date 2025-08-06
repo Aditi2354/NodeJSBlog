@@ -72,6 +72,7 @@ userSchema.static("matchPasswordAndGenerateTokens", async function (email, passw
   return { token, user };
 });
 
-const User=model('user',userSchema)
+const User = model('user', userSchema); // ✅ good
+
 
 module.exports=User;

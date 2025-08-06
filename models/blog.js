@@ -19,6 +19,7 @@ const blogSchema = new Schema({
   },
 }, { timestamps: true });
 
-const Blog = model('blog', blogSchema);
+const Blog = model('blog', blogSchema, 'blogs');  // ⬅ third argument = exact collection name
+
 
 module.exports = Blog;
